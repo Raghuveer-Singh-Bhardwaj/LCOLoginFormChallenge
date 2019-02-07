@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/mWinningAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:hint="Winning Amount"
+                android:inputType="number"
+                android:textColorLink="@android:color/black"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/mContestSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:hint="Contest Size"
+                android:inputType="number"
+                android:textColorLink="@android:color/black"
+                android:textCursorDrawable="@null" />
+
+            <Switch
+                android:id="@+id/multipleTeamSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Multiple Team Allow" />
+
+            <EditText
+                android:id="@+id/mMatchName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:hint="Enter Match Name"
+                android:inputType="textPersonName"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="@android:color/black"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/mWinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:hint="Winner"
+                android:inputType="number"
+                android:textColorLink="@android:color/black"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/mContestCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:hint="Enter Your Contest Code"
+                android:inputType="textPersonName"
+                android:textColorLink="@android:color/black"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/mEntryFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:hint="Entry Fee Per Team"
+                android:inputType="number"
+                android:textColorLink="@android:color/black"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

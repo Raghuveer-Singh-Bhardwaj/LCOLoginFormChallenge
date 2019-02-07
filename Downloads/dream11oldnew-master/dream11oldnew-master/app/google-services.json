@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "184715549326",
+    "firebase_url": "https://dream-11-dd231.firebaseio.com",
+    "project_id": "dream-11-dd231",
+    "storage_bucket": "dream-11-dd231.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184715549326:android:488248e5d366abd8",
+        "android_client_info": {
+          "package_name": "com.propredection.fantasypro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184715549326-4mcnklihjcgs5o4nahs54a56kd3sdbf6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.propredection.fantasypro",
+            "certificate_hash": "b57e7961289c2f8c5a5654d9df93a3704a4e6e78"
+          }
+        },
+        {
+          "client_id": "184715549326-mgbls0epsnoabj3t1mgkifj25po0eih1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp5jnLkPiFvysBkqFUy6rGBGt4KAijAlY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184715549326-mgbls0epsnoabj3t1mgkifj25po0eih1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

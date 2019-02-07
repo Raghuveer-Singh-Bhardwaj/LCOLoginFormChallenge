@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.robotemplates.webviewapp.LeaugeCode">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary"
+
+        local:layout_constraintEnd_toEndOf="parent"
+        local:layout_constraintStart_toStartOf="parent"
+        local:layout_constraintTop_toTopOf="parent"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        local:theme="@style/MyMaterialTheme.Base">
+
+
+        <LinearLayout
+            android:id="@+id/back_menu_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="9dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="61dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cricket" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#FFFF00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                local:fontFamily="@font/robotoregular" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mAddContest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Your Own Contest Code" />
+
+            <TextView
+                android:id="@+id/mTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:text="Please add valid contest code"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:fontFamily="@font/robotoregular" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:elevation="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/mTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TableRow
+                    android:id="@+id/mTitleRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="74dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/cell"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="Match Name"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="74dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/cell"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="Contest Code"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="74dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/cell"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="Multiple Teams"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="74dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/cell"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="Contest Size"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="74dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/cell"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="Winning Amount"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="74dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/cell"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="Entry Fees"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="74dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/cell"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:paddingRight="0dp"
+                        android:text="Copy"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8920798231622156/5524612436"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3" />
+
+    <TextView
+        android:id="@+id/mEmptyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="No Contest Code To Show"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.555">
+
+        <LinearLayout
+            android:id="@+id/mDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--   <item android:title="Watch Video and Earn Money" android:id="@+id/reward" android:icon="@drawable/ic_ondemand_video_black_24dp"/>-->
+
+      <item android:title="Home" android:visible="false"  android:id="@+id/home" android:icon="@drawable/ic_home_black_24dp"/>
+          <item android:title="Share" android:id="@+id/share" android:icon="@drawable/ic_share_black_24dp"/>
+      <!--    <item android:title="Facebook" android:id="@+id/fb" android:icon="@drawable/ic_facebook_black_social_button_circle"/>-->
+        <item android:title="Contact" android:id="@+id/contact" android:icon="@drawable/ic_contact_mail_black_24dp"/>
+        <!--     <item android:title="Tips" android:id="@+id/tips" android:icon="@drawable/ic_help_black_24dp"/>-->
+        <item android:title="Contest Code" android:id="@+id/contest_code" android:icon="@drawable/ic_internet"/>
+        <item android:title="Privacy Policy" android:id="@+id/privacy_policy" android:icon="@drawable/ic_lock_black_24dp"/>
+      <item android:title="Referral" android:id="@+id/referral" android:icon="@drawable/ic_attach_money_black_24dp"/>
+    <item android:title="Refer Leaderboard" android:id="@+id/mleaderboard" android:icon="@drawable/ic_trophy_menu"/>
+      <item android:title="Rate Us" android:id="@+id/rate" android:icon="@drawable/ic_star_black_24dp"/>
+      <item android:title="Donate" android:visible="false" android:id="@+id/donate" android:icon="@drawable/ic_heart"/>
+      <item android:title="Disclaimer" android:id="@+id/disclaimer" android:icon="@drawable/ic_advise"/>
+ </menu>

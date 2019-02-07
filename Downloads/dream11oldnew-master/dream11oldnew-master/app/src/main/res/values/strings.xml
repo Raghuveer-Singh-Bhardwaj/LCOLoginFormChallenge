@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Dream 11 Expert</string>
+
+    <string name="facebook_application_id">2751133411567283</string>
+    <string name="fb_login_protocol_scheme">fb2751133411567283</string>
+    <!-- TODO: Remove or change this placeholder text   Prediction Tips,News and Teams -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+    <integer name="distribution_type">0</integer>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>
